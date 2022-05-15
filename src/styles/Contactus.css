@@ -1,0 +1,71 @@
+.contactus{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background: url('../assets/contactus_img.jpeg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.image-contactus{
+    width: calc(50% + 50px);
+    height: 100%;
+    border-right: 100px solid rgba(0, 0, 0, .8);
+    border-top: 90vh solid transparent;
+}
+
+.info-contactus{
+    width: calc(50% - 50px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.text-contactus{
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.text-contactus::after{
+    content: '';
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+    border: 2px solid #0000ff;
+}
+
+.subtext-contactus{
+    padding: 1rem;
+    color: #ffff00;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (max-width: 767px){
+
+.text-contactus{
+    width: 100%;
+    padding: .3rem;
+    font-size: 1.1rem;
+}
+
+.text-contactus::after{
+    content: '';
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+    border: 2px solid #0000ff;
+}
+
+.subtext-contactus{
+    font-size: .8rem;
+    padding: .3rem;
+}
+
+}
